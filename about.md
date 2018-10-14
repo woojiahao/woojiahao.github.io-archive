@@ -2,7 +2,6 @@
 title: Portfolio
 layout: home
 ---
-
 # About Me
 **Woo Jia Hao is a software engineer based in Singapore**, currently studying at Singapore Polytechnic, pursuing a 
 diploma in information & technology.
