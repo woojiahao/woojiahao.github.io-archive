@@ -65,9 +65,9 @@ Some basic pseudo-code would look like this:
 
 |        | Details                                                                                                                                                                                                                                                         |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Input  | <ol><li>Name of the function</li><li>Function to be timed</li></ol>                                                                                                                                                                                             |
+| Input  | {::nomarkdown}<ol><li>Name of the function</li><li>Function to be timed</li></ol>{:/}                                                                                                                                                                                             |
 | Output | None, this function will make use of a side effect                                                                                                                                                                                                              |
-| Steps  | <ol><li>Take the time before running the function</li><li>Run the function</li><li>Take the time after running the function</li><li>Print out the difference between the before and after, this will be total time it took to for the function to run</li></ol> |
+| Steps  | {::nomarkdown}<ol><li>Take the time before running the function</li><li>Run the function</li><li>Take the time after running the function</li><li>Print out the difference between the before and after, this will be total time it took to for the function to run</li></ol>{:/} |
 
 #### Defining structure
 In Kotlin, in order to declare a lambda, you have to declare a *function type*, or some kind of contract for the 
