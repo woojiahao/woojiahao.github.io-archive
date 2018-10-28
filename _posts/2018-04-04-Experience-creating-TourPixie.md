@@ -1,9 +1,10 @@
 ---
-published: true
+published: false
 ---
 ## What is TourPixie?
 
-TourPixie was a pair project I had made for a school project. I worked alongside my friend to create a a tour booking and management application. The project required us to use C# and SQL to create a working product that had data persistence.
+TourPixie was a school pair project, where we were required to create a tour booking and management application. The 
+project required us to use C# and SQL to create a working product that had data persistence.
 
 ## Process of creating the application:
 First, we began by thinking of the features we wanted to include in the application, and some of those we decided upon were a theme changer, tour recommendation system etc.
