@@ -1,6 +1,6 @@
 ---
 title: About Me
-layout: posts
+layout: home
 permalink: /about/
 published: true
 ---
