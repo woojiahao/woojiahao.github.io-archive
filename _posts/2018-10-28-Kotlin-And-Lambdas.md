@@ -31,19 +31,16 @@ You begin to write some code to test this function:
 
 ```kotlin
 fun foo(upper: Int): Int {
-    var sum = 0
-    for(i in 1..upper) {
-        sum += i
-    }
-
-    return sum
+  var sum = 0
+  for(i in 1..upper) sum += i
+  return sum
 }
 
 fun main(main: Array<String>) {
-    val before = System.currentTimeMillis()
-    println("foo returns: ${foo(10000)}")
-    val after = System.currentTimeMillis()
-    println("foo took ${after - before}ms to run")
+  val before = System.currentTimeMillis()
+  println("foo returns: ${foo(10000)}")
+  val after = System.currentTimeMillis()
+  println("foo took ${after - before}ms to run")
 }
 ```
 
@@ -89,10 +86,10 @@ function body of this timer.
 
 ```kotlin
 fun functionTimer(name: String, upper: Int, func: (Int) -> Int) {
-    val before = System.currentTimeMillis();
-    println("$name returned ${func(upper)}")
-    val after = System.currentTimeMillis();
-    println("$name took ${after - before}ms to run")
+  val before = System.currentTimeMillis();
+  println("$name returned ${func(upper)}")
+  val after = System.currentTimeMillis();
+  println("$name took ${after - before}ms to run")
 }
 ```
 
@@ -111,14 +108,11 @@ the first function we tested, which simply added a bunch of numbers from 1 up ti
 
 ```kotlin
 fun main(args: Array<String>) {
-    functionTimer("add", 10000) {
-        var sum = 0
-        for (i in 1..it) {
-            sum += i
-        }
-
-        sum
-    }
+  functionTimer("add", 10000) {
+    var sum = 0
+    for (i in 1..it) sum += i
+    sum
+  }
 }
 ```
 
@@ -134,12 +128,9 @@ Now, we can extend this function to work with any other function that takes in a
 
 ```kotlin
 functionTimer("multiply", 100) {
-    var result = 1
-    for (i in 2..it) {
-        result *= i
-    }
-
-    result
+  var result = 1
+  for (i in 2..it) result *= i
+  result
 }
 
 functionTimer("wacky", 1000) { (1..it).map { num -> num * 3 }.sum() }
