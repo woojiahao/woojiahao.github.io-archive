@@ -1,3 +1,7 @@
+---
+published: true
+---
+
 Every developer will encounter slumps where they have no idea what to do and nothing in their life challenges them
 to grow as a developer. Over the past 5 months, I was in that slump. Even though school work had swamped me, it was
 never challenging, rather, just a lot of work to handle. This lack of a challenge had made me begin to feel that I 

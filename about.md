@@ -4,12 +4,12 @@ layout: single
 permalink: /about/
 published: true
 ---
-**Woo Jia Hao is a software engineer based in Singapore**, currently studying at Singapore Polytechnic, pursuing a 
-diploma in information & technology.
 
-The languages that I’m most comfortable with are Java, Python and SQL in that order and I am currently learning Kotlin.
+I am a software engineer from Singapore. I am currently studying at Singapore Polytechnic, pursuing a Diploma in 
+Information & Technology at the School of Computing.
 
-I am currently working on a cross-server open source public Discord administration bot, repo link.
+The languages I work with most often include Kotlin, Java, Python and SQL.
 
-I enjoy learning and growing as a developer and hope to widen my horizons as I begin to delve into the world of Open 
-Source, hoping to give back to the community!
+Currently, I am working on a [markdown text editor](https://github.com/woojiahao/Omnius) using Kotlin and TornadoFX.
+
+When I am not programming, I enjoy running and studying about computer science. 
