@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -105,17 +105,17 @@ author:
   avatar           : "/assets/img/profile.jpg"
   bio              : "I am a wizard with the powers of coding!"
   location         : "Singapore"
-  email            : "woojiahao1234@gmail.com"
+  email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:woojiahao1234@gmail.com
+      # url: mailto:woojiahao1234@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://woojiahao.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/devchill1"
+    #   url: "https://twitter.com/devchill1"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -131,10 +131,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/devchill1"
+    #   url: "https://twitter.com/devchill1"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+    #   # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/woojiahao"
