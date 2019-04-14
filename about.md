@@ -49,4 +49,4 @@ I enjoy running and hanging out with friends. I've also been getting into learni
 - I'm 183cm (6ft) tall!
 - My best time for 5km is 25 minutes 11 seconds 🏃
 - I'll be an intern at DBS Singapore for my school internships! 🤵
-- I'm a moderator in The Programmer Hangout - the largest programming discord server!
+- I'm a moderator in The Programmer Hangout - the largest programming discord server! 😎
