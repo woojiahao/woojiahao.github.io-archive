@@ -24,7 +24,7 @@ navigation:                  # (optional) site navigation in the header
   - README.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  # envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+  envelope: "mailto:woojiahao1234@gmail.com"
   github: "https://github.com/woojiahao"
   # rss: "/contrast/feed.xml"
 
