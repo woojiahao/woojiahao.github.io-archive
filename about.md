@@ -3,7 +3,13 @@ title: "About"
 ---
 
 I am a software engineer from Singapore. I am a 3rd year student at Singapore Polytechnic, pursuing a Diploma in 
-Information & Technology at the School of Computing. I am avid learner and love problem solving. 
+Information & Technology at the School of Computing. I am avid learner and love problem solving.
+
+I am currently interning at DBS Singapore, where I have contributed in the following areas to my team:
+- UAT team coordinator
+- Workflow automation
+- Data mining & investigation
+- Quality management
 
 ## Experience
 The languages I work with the most are Kotlin, Java, Python and SQL. I have dabbled in some Javascript and C# in the 
@@ -46,7 +52,7 @@ Some of my note worthy projects include ...
 I enjoy running and hanging out with friends. I've also been getting into learning Linux and PC building.
 
 ## Fun facts!
-- I'm 183cm (6ft) tall!
+- I'm 181cm (6ft) tall!
 - My best time for 5km is 25 minutes 11 seconds 🏃
-- I'll be an intern at DBS Singapore for my school internships! 🤵
+- I'm be an intern at DBS Singapore for my school internships! 🤵
 - I'm a moderator in The Programmer Hangout - the largest programming discord server! 😎
