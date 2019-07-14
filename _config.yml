@@ -26,6 +26,8 @@ navigation:                  # (optional) site navigation in the header
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   envelope: "mailto:woojiahao1234@gmail.com"
   github: "https://github.com/woojiahao"
+  linkedin: "https://www.linkedin.com/in/woo-jia-hao-089346155/"
+  twitter: "https://twitter.com/devchill1"
   # rss: "/contrast/feed.xml"
 
 comments:                    # embed disqus or isso comments
