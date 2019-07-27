@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Using delegated properties in Kotlin"
+title: "Applications of Kotlin's delegate properties"
 ---
 
 ## Announcement time!
