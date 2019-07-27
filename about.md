@@ -33,7 +33,7 @@ web development and explore the various frameworks and tools used in the industr
   serve as the base for expansions. I picked up skills such as Android development and UI design as well as learning to
   interact with clients and pitching my ideas to the team.
 
-- Intern - SOI Re-platform @ [DBS Singapore](https://www.dbs.com.sg/index/default.page) - Apr 2019 - Aug 2019
+- Intern - SOI Re-platform @ [DBS Singapore](https://www.dbs.com.sg/index/default.page) - Apr 2019 to Aug 2019
 
   As explained earlier, I wore many hats during my internship at DBS Singapore, serving as a UAT team coordinator, 
   automating workflows, performing data mining & analysis, creating and managing quality management checks as well as 
