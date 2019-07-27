@@ -83,9 +83,7 @@ modifying the object that created the delegate.
 ```kotlin
 import kotlin.reflect.*
 
-class DelegateExample {
-  private var internalValue = ""
-
+class DelegateExample(private var internalValue = "") {
   operator fun getValue(thisRef: Any?, property: KProperty<*>) 
     = "Internal value is ${internalValue}"
 
@@ -95,4 +93,15 @@ class DelegateExample {
 }
 ```
 
-In the example above
+In the example above, we have created a delegated property that when referenced as a variable (get), will return a 
+string. But when called with an assignment operator (set) will only accept `Int`.
+
+```kotlin
+var value by DelegateExample()  // internalValue = ""
+
+println(value)                  // Internal value is 
+value = 10                      // internalValue = "10"
+println(value)                  // Internal value is 10
+value = 5                       // internalValue = "105"
+println(value)                  // Internal value is 105
+```
