@@ -3,11 +3,11 @@ published: true
 title: "Using delegated properties in Kotlin"
 ---
 
-## Short announcement!
+## Announcement time!
 After a long hiatus from kMD2PDF, I revved up my engines and began to work on my latest planned feature for the 
 project...
 
-> YAML support!
+**YAML support!**
 
 Yes, now YAML is in the works and you can now control basic attributes of your exported document using only 
 [front matter YAML.](https://jekyllrb.com/docs/front-matter/)
@@ -16,7 +16,7 @@ This is an incredibly big milestone as this allows anyone to quickly customise t
 single line of Kotlin, and with another planned release to create a GUI exporter for markdown documents, this would 
 greatly streamline users' experience.
 
-## Okay, what are delegate properties
+## Okay, so what are delegate properties?
 kMD2PDF introduces a theming engine where you are able to change the entire color scheme of an exported document just by
 specifying an attribute in code as such
 
@@ -109,3 +109,57 @@ println(value)                  // Internal value is 105
 As you can see from, in order to instantiate a delegated property and use the features of `getValue` and `setValue`, we
 have to set the variable with the `by` keyword. This way, when you have variable references, it will always call the 
 respective `setValue`/`getValue` methods.
+
+Now that you've had a crash course with delegated properties in Kotlin, can you think of how we can apply this concept 
+to our current problem? To recap, we already have established a singleton to manage the configuration across all 
+elements - and the configuration we are most interested in is the `theme` attribute which indicates which theme the 
+document will create. In that case, since the state is singular and shared across the entire program, we can create a 
+delegate property to hold the configuration of all the themes available, and when the time comes to generate the CSS for
+the document, the delegated property is called and it will return the corresponding attribute for the specific theme 
+configured during the time of generation (since the document HTML/CSS are generated per call of 
+`MarkdownConverter#convert` as opposed to generating them all at once).
+
+In that case, we can create the delegated property as such:
+
+```kotlin
+class CssProperty <T>(
+  private var light: T?,
+  private var dark: T? = light,
+  private var fallback: T? = null
+) {
+  operator fun getValue(thisRef: Any?, property: KProperty<*>) =
+    when(Settings.theme) {
+      LIGHT -> light
+      DARK -> dark
+    } ?: fallback
+
+  operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T?) =
+    when(Settings.theme) {
+      LIGHT -> {
+        light = value
+      }
+      DARK -> {
+        dark = value
+      }
+    }
+}
+```
+
+This way, we can create a `CssProperty` to hold the configurations required for each theme (light/dark for now) and then
+when the variables are accessed, they will return the corresponding value stored depending on the current theme 
+configured in the settings. The `fallback` property is a "default" for each `CssProperty` in the event where the `light`
+or `dark` property are both set to null.
+
+To use the `CssProperty` class, we will use the following syntax:
+
+```kotlin
+var textColor by CssProperty<FontFamily?>(c("00"), c("fa"))
+print(textColor) // Light theme text color -> #000000
+Settings.theme = Settings.Theme.DARK
+print(textColor) // Dark theme text color  -> #fafafa
+```
+
+And this provides us with such a convenient interface to modify the values of the configured properties and to quickly
+change the theme settings for each element on a whim.
+
+## Roadblocks 😢
