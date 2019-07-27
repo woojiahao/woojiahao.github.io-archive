@@ -75,9 +75,23 @@ and this was indeed the approach I ended up employing due to certain limitations
 However, in Kotlin, there exists a language construct called 
 [delegated properties](https://kotlinlang.org/docs/reference/delegated-properties.html) where you are able to call an 
 object constructor to initialise a variable and provide it with a base of data. Subsequent times accessing this variable
-masks the object constructor and will only allow you to access the data type specified by the delegated property. That 
-is, a delegated property is akin to a variable with 2 return types.
+masks the object constructor and will only allow you to access the data type specified by the delegated property. You 
+can think of a delegated object as an object that defaults all variable references to the given `getValue` and 
+`setValue` attributes. This effectively means that once you've delegated a property, you are no longer entitled to 
+modifying the object that created the delegate.
 
 ```kotlin
+import kotlin.reflect.*
 
+class DelegateExample {
+  private var internalValue = ""
+
+  operator fun getValue(thisRef: Any?, property: KProperty<*>) = "Internal value is ${internalValue}"
+
+  operator fun setValue(thisRef: Any?, property: KProperty<*>, value: Int) {
+    internalValue += value.toString()
+  }
+}
 ```
+
+In the example above
