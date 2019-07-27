@@ -49,7 +49,7 @@ In this example, I created a functional interface (`StringOp`), declared an inst
 The core syntax of the lambda is as such:
 ```
 (parameters) -> {
-	actions
+  actions
 }
 ```
 
@@ -58,10 +58,10 @@ In cases where there is only 1 parameter, the parantheses can be omitted, as see
 If lambdas did not exist, I would have to declare the method like this:
 ```java
 StringOp operation = new StringOp () {
-	@Override
-  	public String perform (String in) {
-      return new StringBuilder(in).reverse().toString();
-    }
+  @Override
+  public String perform (String in) {
+    return new StringBuilder(in).reverse().toString();
+  }
 };
 
 operation.perform("Hello World");
@@ -76,34 +76,33 @@ I will first begin by showing an example of a typical program and then showing t
 **Traditional Solution:**
 ```java
 public class Solution {
-	static void printMultiples (int multiple, int upper) {
-    	for (int i = 1; i <= upper; i++) {
-        	if (i % multiple == 0) {
-            	System.out.println(i);
-            }
+  static void printMultiples (int multiple, int upper) {
+    for (int i = 1; i <= upper; i++) {
+      if (i % multiple == 0) {
+        System.out.println(i);
         }
-     }
+      }
+  }
   
-  	public static void main (String[] args) {
-    	printMultiples(2, 10);
-    }
+  public static void main (String[] args) {
+    printMultiples(2, 10);
+  }
 }
 ```
 
 **Streams Solution:**
 ```java
 public class Solution {
-  
-	static void printMultiples (int multiple, int upper) {
-    	IntStream
-          .rangeClosed(1, upper)
-          .filter(i -> i % multiple == 0)
-          .forEach(System.out::println);
+  static void printMultiples (int multiple, int upper) {
+    IntStream
+      .rangeClosed(1, upper)
+      .filter(i -> i % multiple == 0)
+      .forEach(System.out::println);
     }
-  
-  	public static void main (String[] args) {
-    	printMultiples(2, 10);
-    }
+
+  public static void main (String[] args) {
+    printMultiples(2, 10);
+  }
 }
 ```
 

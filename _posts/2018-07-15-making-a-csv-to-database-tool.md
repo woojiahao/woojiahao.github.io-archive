@@ -43,9 +43,9 @@ Accomplishments using SQLAlchemy:
 
 ```python
 attr_dict = {
-	'__tablename__': 'Users', 
-    id = Column(Integer, primary_key=True),
-    name = Column(String(50))
+  '__tablename__': 'Users', 
+  id = Column(Integer, primary_key=True),
+  name = Column(String(50))
 }
 table = type('UsersTable', (Base,), attr_dict)
 ```
@@ -54,14 +54,14 @@ table = type('UsersTable', (Base,), attr_dict)
 
 ```python
 data = [
-	[1, 'John Doe'],
-    [2, 'Mary Anne'],
-    [3, 'Peter Goh']
+  [1, 'John Doe'],
+  [2, 'Mary Anne'],
+  [3, 'Peter Goh']
 ]
 with engine.connect() as conn:
-	for row in data:
-    	ins = tbl.insert(values=row)
-        conn.execute(ins)
+  for row in data:
+    ins = tbl.insert(values=row)
+    conn.execute(ins)
 ```
 
 ### Python
