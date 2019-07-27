@@ -86,7 +86,8 @@ import kotlin.reflect.*
 class DelegateExample {
   private var internalValue = ""
 
-  operator fun getValue(thisRef: Any?, property: KProperty<*>) = "Internal value is ${internalValue}"
+  operator fun getValue(thisRef: Any?, property: KProperty<*>) 
+    = "Internal value is ${internalValue}"
 
   operator fun setValue(thisRef: Any?, property: KProperty<*>, value: Int) {
     internalValue += value.toString()
