@@ -105,3 +105,7 @@ println(value)                  // Internal value is 10
 value = 5                       // internalValue = "105"
 println(value)                  // Internal value is 105
 ```
+
+As you can see from, in order to instantiate a delegated property and use the features of `getValue` and `setValue`, we
+have to set the variable with the `by` keyword. This way, when you have variable references, it will always call the 
+respective `setValue`/`getValue` methods.
