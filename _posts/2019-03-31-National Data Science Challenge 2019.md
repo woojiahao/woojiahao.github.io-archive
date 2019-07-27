@@ -1,5 +1,6 @@
 ---
 published: true
+title: "Concluding the National Data Science Challenge 2019"
 ---
 
 Recently, I participated in the [National Data Science Challenge](https://careers.shopee.sg/ndsc/) organized by Shopee!

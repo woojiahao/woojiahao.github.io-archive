@@ -1,5 +1,6 @@
 ---
 published: true
+title: "An investigation into generics in Java"
 ---
 Generics was a feature introduced in [Java 5](https://en.wikipedia.org/wiki/Generics_in_Java) and it has changed how 
 Java developers write code.
@@ -95,7 +96,7 @@ inline, the generic type given to the function can be preserved, thus, allowing 
 information during runtime.
 
 ```kotlin
-<T> fun foo() {
+fun <T> foo() {
   println(T::class.java)
 }
 ```

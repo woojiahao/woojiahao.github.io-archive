@@ -1,5 +1,6 @@
 ---
 published: true
+title: "Crafting a CSV to DB tool"
 ---
 ## Why make this?
 This tool was originally meant to be used for a data science project of mine where I had to pull data from the internet down as `.csv` files and by reading the file, be able to convert it into a corresonding database table.

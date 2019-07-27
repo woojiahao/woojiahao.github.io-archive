@@ -1,5 +1,6 @@
 ---
 published: true
+title: "Experience conducting a workshop for Kotlin"
 ---
 During the school holidays, I was fortunate to be able to work with a lecturer from my school to hold a workshop 
 teaching Kotlin using Android development as a tool. This was an incredibly interesting and refreshing experience, 
