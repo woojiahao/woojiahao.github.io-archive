@@ -163,3 +163,43 @@ And this provides us with such a convenient interface to modify the values of th
 change the theme settings for each element on a whim.
 
 ## Roadblocks 😢
+However, when attempting to create the YAML feature, I had noticed a huge flaw in the delegate property system used for
+configuring the style components. Since the YAML formatting had to be rendered during runtime and as such, the YAML had
+to modify the existing style which while possible using the Singleton pattern, certain components like relying on a 
+fallback would not be able to register the changes made. Therefore, I had to revert to using a simple class to house the
+CSS properties of an element and convert the Settings singleton to be a regular object that has to be passed to each 
+element for the configuration to take place.
+
+```kotlin
+class CssProperty<T>(
+  val theme: Settings.Theme,
+  private var light: T? = null,
+  private var dark: T? = light, 
+  private var fallback: T? = null
+) { 
+  var value: T?
+    get() = when(theme) {
+      LIGHT -> light
+      DARK -> dark
+    } ?: fallback
+
+    set(input) {
+      light = input
+      dark = input
+    }
+}
+```
+
+Then in order for the converter to apply the changes of the YAML to the document being generated, we iterate over every
+element within the style and apply the changes accordingly. 
+
+```kotlin
+fun <T> List<Element>.updateStyles(input: T?, update: Element.(T) -> Unit) {
+  input?.let { forEach { e -> e.update(it)  } }
+}
+```
+
+The lesson learnt here is that while a structure might look good on paper and work for a specific use case, this might 
+not always be the case and this can result in rewriting of the codebase. I was lucky that the codebase was one that I 
+was very familiar with and I could afford the rewrite to get this new feature up and running. However, I would not 
+always be so lucky and might encounter a codebase that might take too long to rewrite.
