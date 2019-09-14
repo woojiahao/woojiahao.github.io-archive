@@ -6,7 +6,9 @@ I am a software engineer from Singapore. I am a third year student at Singapore 
 Information & Technology under the School of Technology. I am avid learner and love problem solving. I seize any 
 opportunity to hone my knowledge and seek to be the best at anything I set my sights on.
 
-Currently, I am an intern at DBS Singapore, where I have made the following contributions to my project - SOI 
+Currently, I am having my semester break and I'm working on several projects and learning some CS related topics.
+
+I was a former intern at DBS Singapore, where I made the following contributions to my project - SOI 
 Re-platform:
 - UAT team coordinator - went from 96 teams pending testing to 9 teams pending!
 - Workflow automation - applied Java & Python skills to automate tasks that would take hours to complete to have them 
@@ -50,6 +52,7 @@ Some of my projects include
 1. **kMD2PDF** - Markdown to PDF file conversion library written in Kotlin; link [here](https://github.com/omnius-project/kMD2PDF)
 2. **Omnius** - Markdown IDE written in Kotlin; link [here](https://github.com/omnius-project/Omnius)
 3. **Taiga** - Discord administration bot written in Kotlin; link [here](https://github.com/woojiahao/Taiga)
+4. **Meetup** - Discord bot for posting upcoming tech events in Singapore; link [here](https://github.com/woojiahao/meetup)
 
 ## Currently, I'm learning ...
 1. **Algebra and trigonometry** 
@@ -60,24 +63,11 @@ Some of my projects include
    I am using the [OpenStax textbook](https://openstax.org/details/books/algebra-and-trigonometry) to learn this 
    subject.
 
-2. **Haskell**
+2. **Struture and Interpretation of Computer Programs**
    
-   I have always been fascinated by functional programming and the server I'm in often promotes Haskell as an amazing
-   language. So I decided to try it out and so far I'm enjoying it. Once I've moved into the meatier parts of Haskell,
-   I'll begin blogging about my experiences with the language.
+   I have always been put off by this book due to its high level of technicality but this holiday, I really wanted to try something new and so I decided to pick it up and give it a read. Currently, I'm enjoying it and really starting to put together the pieces of the book.
 
-   I am using the [Haskell book](http://haskellbook.com) to learn Haskell.
-
-3. **Design patterns**
-   
-   Whilst I've programmed for quite a while now, my programs aren't always nicely organised and this has caused some 
-   trouble when attempting to refactor pieces of code. As such, design patterns are, in my eyes, crucial for organising
-   your program. 
-
-   I am using the [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) book to pick up design patterns. I also have a repository for my notes on whatever I've been learning, 
-   which you can find [here.](https://github.com/woojiahao/design-patterns)
-
-   I have completed the book and I'm now settling down to finish my notes for the remaining design patterns.
+   The book can be found [here.](https://web.mit.edu/alexmv/6.037/sicp.pdf)
 
 ## Hobbies
 When I'm not programming, I can be seen running or hanging out with friends. I also love reading and have been using my
@@ -87,5 +77,5 @@ I've also been getting into Linux and PC building! I also enjoy expressing my th
 ## Fun facts!
 - I'm 181cm (6ft) tall! 🦒
 - My best time for 5km is 25 minutes 11 seconds 🏃
-- I'm an intern at DBS Singapore! 🤵
+- I was an intern at DBS Singapore! 🤵
 - I'm a moderator for The Programmer Hangout - the largest programming Discord server! 😎
